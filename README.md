@@ -1,6 +1,7 @@
 # Shop Angular Cloudfront
 
 Angular version: ~12.
+test note
 
 Repo maintainers:
 
