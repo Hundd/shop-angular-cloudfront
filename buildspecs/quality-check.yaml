@@ -12,16 +12,16 @@ phases:
 
     commands:
       - echo Updating and Installing system dependencies...
-      # - apt-get update -y -q
+      - apt-get update -y -q
 
       - echo Installing Google Chrome for testing
-      # - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-      # - apt install -y ./google-chrome-stable_current_amd64.deb
-      # - apt -f install
+      - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      - apt install -y ./google-chrome-stable_current_amd64.deb
+      - apt -f install
 
       # Install all necessary dependencies:
       - echo Installing NPM dependencies...
-      # - npm install
+      - npm install
 
   build:
     commands:
@@ -33,10 +33,10 @@ phases:
       #      - npm run test:ci
 
       - echo Running unit tests over serverless app...
-      #      - npm run sam:test
+      - npm run sam:test
 
       - echo Building a project...
-      # - npm run build --configuration=${BUILD_CONFIGURATION}
+      - npm run build --configuration=${BUILD_CONFIGURATION}
 
       - echo Running npm audit
   #      - npm audit
